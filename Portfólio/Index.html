@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            /*Colors*/
+            --bright: #ddd;
+            --darker: rgb(25, 25, 25);
+        }
+        body {
+            background: url('imgs/back.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+        #title {
+            padding-top: 50px;
+            display:flex;
+            font-size: 40px;
+            font-weight: bold;
+            color:var(--bright);
+            font-family: "Courier New", Courier, monospace;
+            align-items: center;
+            justify-content: center;
+        }
+        .basic-text-title {
+            font-size: 18px;
+            padding-bottom: 50px;
+            font-family: "Courier New", Courier, monospace;
+            color: var(--bright);
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .title-with-border {
+            display: inline-block; 
+            border-bottom: 2px solid var(--bright);
+            padding-bottom: 5px;
+        }
+        .basic-text{
+            font-size: 18px;
+            font-family: "Courier New", Courier, monospace;
+            color: var(--bright);
+        }
+        .whatiworkwith {
+            border:none;
+            display:flex;
+            width: auto;
+            align-items: center;
+            justify-content: center;
+        }
+        .whatiworkwith-item{
+            display:flex;
+            padding-left: 20px; 
+            align-items: center;
+            justify-content: space-between;
+        }
+        .whatiworkwith-item img {
+            padding-right:20px;
+            height: 20px;
+            width: 20px;
+            object-fit: cover;
+        }
+        .containers {
+            padding-top: 50px;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .container {
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            background: rgba(25, 25, 25, 0.1);
+            box-shadow: 0px 0px 30px rgba(85, 69, 69, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            max-width: 40%;
+            margin: 0 auto;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .container h1{
+            color:var(--bright);
+            font-family: "Courier New", Courier, monospace;
+        }
+        .container p{
+            color:var(--bright);
+            font-family: "Courier New", Courier, monospace;
+        }
+        .container li{
+            color:var(--bright);
+            font-family: "Courier New", Courier, monospace;
+        }
+        .div-lista{ /*a image must go into here*/
+            display: flex;
+        }
+        a{
+            text-decoration: none;
+        }
+        .btn {
+            margin-top: 20px;
+            border:none;
+            width: 40vh;
+            padding:20px;
+            border-radius: 10px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            cursor:pointer;
+        }
+        .btn img{
+            padding-right:20px;
+            height: 20px;
+            width: 20px;
+            object-fit: cover;
+        }
+        .projs-container{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+    <title>Meu Portfólio</title>
+</head>
+<body>
+    <h1 id="title">NATAN TAVARES</h1>
+    <p class="basic-text-title">Paraná - Brazil</p>
+    
+    <div class="whatiworkwith">
+        <div class="whatiworkwith-item"><img src="imgs/c-sharp-icon.png" alt="test"><span class="basic-text">C Sharp</span></div>
+        <div class="whatiworkwith-item"><img src="imgs/crud-icon.png" alt="test"><span class="basic-text">CRUD</span></div>
+        <div class="whatiworkwith-item"><img src="imgs/css-icon.png" alt="test"><span class="basic-text">CSS</span></div>
+        <div class="whatiworkwith-item"><img src="imgs/html-icon.png" alt="test"><span class="basic-text">HTML</span></div>
+        <div class="whatiworkwith-item"><img src="imgs/javascript-icon.png" alt="test"><span class="basic-text">JavaScript</span></div>
+        <div class="whatiworkwith-item"><img src="imgs/sql-icon.png" alt="test"><span class="basic-text">SQL</span></div>
+    </div>
+    <div class="containers">
+        <div class="container">
+            <p class="basic-text">Me chamo Dhonatan ou Natan (apelido) e há 4 anos trabalho com administração e gestão de estoque (almoxarife e estoquista) e sempre estive estudando TI para fazer uma eventual transição de carreira.</p>
+        </div>
+        <div style="display:flex; align-items: center; justify-content: center;width: 100%;"><a href="https://github.com/TavaresNatan/"><button class="btn"><img src="imgs/git.png" alt="test">Meu GitHub</button></a></div>
+        <div class="container">
+            <h1>Mais sobre as ferramentas que uso:</h1>
+            <p>Acima são minhas principais ferramentas e boas práricas, mas aqui você pode encontrar a lista completa:</p>
+            <p class="basic-text">Linguagens que uso:</p>
+            <div class="div-lista">
+                <ul>
+                    <li>C Sharp</li>
+                    <li>Html & Css</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                    <li>CRUD</li>
+                    <li>Python</li>
+                    <li>Winforms</li>
+                    <li>WPF</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="basic-text-title" style="padding-top: 50px;">
+        <span class="title-with-border">Alguns dos meus projetos:</span>
+    </h1>
+
+    <div class="container"> <!--Os itens desse container podem ser gerados por js para facilitar-->
+        <div class="projs-container">
+            <p class="basic-text">Test</p>
+            <img src="" alt="image goes here">
+        </div>
+        <a href="">Link do projeto</a>
+    </div>
+</body>
+</html>
